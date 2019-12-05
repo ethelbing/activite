@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:mysql://localhost:3306/activite?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: hrbroot
+
+server:
+  tomcat:
+    uri-encoding: utf-8
+  port: 8071
+  servlet:
+    context-path: /apiyml
