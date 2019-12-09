@@ -7,8 +7,14 @@ spring:
     password: hrbroot
 
 server:
-  tomcat:
-    uri-encoding: utf-8
+#  tomcat:
+#   http://127.0.0.1:8071/apiyml/person/save?name=anything01  tomcat 路劲可以自己就设置 context-path
+#    uri-encoding: utf-8
+#  port: 8071
+#  servlet:
+#    context-path: /apiyml
+
+#  http://127.0.0.1:8071/person/save?name=anything01  netty 路径没有context-path
   port: 8071
-  servlet:
-    context-path: /apiyml
+  netty:
+    connection-timeout: 20

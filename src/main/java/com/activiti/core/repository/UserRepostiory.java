@@ -2,7 +2,10 @@ package com.activiti.core.repository;
 
 import com.activiti.core.domain.User;
 import org.springframework.stereotype.Repository;
+import org.springframework.web.reactive.function.server.RouterFunction;
+import org.springframework.web.reactive.function.server.ServerResponse;
 
+import java.util.Collection;
 import java.util.ConcurrentModificationException;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
@@ -33,5 +36,12 @@ public class UserRepostiory {
         // 设置 ID
         user.setId(id);
         return repository.put(id,user) == null;
+    }
+
+    /** 返回所有用户列表
+     * @return
+     * */
+    public Collection<User> findAll(){
+        return repository.values();
     }
 }

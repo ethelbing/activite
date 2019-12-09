@@ -25,20 +25,21 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jdbc</artifactId>
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-web</artifactId>-->
+<!--        </dependency>-->
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-all -->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>2.1.1</version>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>4.1.43.Final</version>
         </dependency>
 
         <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <scope>runtime</scope>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-webflux</artifactId>
+            <version>2.1.6.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -52,9 +53,19 @@
             </exclusions>
         </dependency>
         <dependency>
-            <groupId>org.apache.tomcat.embed</groupId>
-            <artifactId>tomcat-embed-jasper</artifactId>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>2.1.1</version>
         </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.apache.tomcat.embed</groupId>-->
+<!--            <artifactId>tomcat-embed-jasper</artifactId>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
@@ -67,6 +78,13 @@
             <version>1.18.10</version>
             <scope>provided</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.alibaba/druid -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.1.20</version>
+        </dependency>
+
         <!-- 不使用webflux 默认springboot使用的是Tomcat，使用默认使用的是netty-->
         <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-webflux -->
 <!--        <dependency>-->
@@ -80,6 +98,8 @@
 <!--            <artifactId>reactor-core</artifactId>-->
 <!--            <version>3.3.0.RELEASE</version>-->
 <!--        </dependency>-->
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-webflux -->
+
 
     </dependencies>
 
